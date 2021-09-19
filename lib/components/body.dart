@@ -16,7 +16,7 @@ class Body extends  StatelessWidget {
         children: [
           HeaderWithSearchBox(size: size),
           TitleWithMoreButton( title: 'Consigliati',),
-                Container(
+                /*Container(
             margin: EdgeInsets.only(
               left: kDefaultPadding,
               top: kDefaultPadding/2,
@@ -54,7 +54,7 @@ class Body extends  StatelessWidget {
                 )
               ],
             )
-          )
+          )*/
         ],
       ),
     );
