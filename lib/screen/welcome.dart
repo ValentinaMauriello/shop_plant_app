@@ -27,6 +27,14 @@ class MyHomePage extends StatelessWidget {
             ),
             Spacer(flex: 3,),
             ElevatedButton(
+              style: ButtonStyle(
+                shape: MaterialStateProperty.all(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(18.0),
+                side: BorderSide(color: kPrimaryColor)),
+                ),
+                elevation: MaterialStateProperty.all(10),
+              ),
               onPressed: ()=> Navigator.push(
                   context, MaterialPageRoute(
                     builder: (context) => ExplorerScreen())
