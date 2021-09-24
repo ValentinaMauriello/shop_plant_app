@@ -15,7 +15,7 @@ class HeaderWithSearchBox extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(bottom: kDefaultPadding*2.5),
       //coprirà il 20% dell'altezza totale 
-      height: size.height*0.3,
+      height: size.height*0.2,
       child: Stack(
         children: [
           Container(
@@ -31,7 +31,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                 bottomRight: Radius.circular(46),
               ),
             ),
-            /*child: Row(
+            child: Row(
               children: [
                 Text('Shoplant', 
                 style: Theme.of(context).textTheme.headline5!.copyWith(
@@ -43,9 +43,9 @@ class HeaderWithSearchBox extends StatelessWidget {
               //Image.asset("assets/images/logo.png")
                 
               ],
-            ),*/
+            ),
           ),
-          /*Positioned(
+          Positioned(
             bottom: 0,
             left: 0,
             right: 0,
@@ -84,7 +84,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                 ],
               ),
             )
-          )*/
+          )
         ],
       ),
     );
