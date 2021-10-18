@@ -24,6 +24,7 @@ class Body extends  StatelessWidget {
               bottom: kDefaultPadding * 2.5
             ),
             width: size.width* 0.4,
+            
             child: Column(
               children: [
                 Image.asset("assets/images/image_1.png"),
