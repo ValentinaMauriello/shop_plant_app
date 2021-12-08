@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:shop_app_plant/accedi/login.dart';
 import 'package:shop_app_plant/constants.dart';
-import 'package:shop_app_plant/screen/explorer_screen.dart';
+
 
 
 class MyHomePage extends StatelessWidget {
@@ -35,10 +35,13 @@ class MyHomePage extends StatelessWidget {
                 ),
                 elevation: MaterialStateProperty.all(10),
               ),
-              onPressed: ()=> Navigator.push(
+              onPressed: (){},
+
+               /*Navigator.push(
                   context, MaterialPageRoute(
                     builder: (context) => ExplorerScreen())
-                    ), 
+                    ),*/
+
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.min,

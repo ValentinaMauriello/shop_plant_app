@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:shop_app_plant/screen/explorer_screen.dart';
 import 'package:flutter_login/flutter_login.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -72,9 +71,9 @@ class LoginPage extends  StatelessWidget {
           ),
         ],
       onSubmitAnimationCompleted: (){
-        Navigator.of(context).pushReplacement(MaterialPageRoute(
+        /*Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (context) => ExplorerScreen(),
-        ));
+        ));*/
       },
       onRecoverPassword: _recoverPassword,
     );
