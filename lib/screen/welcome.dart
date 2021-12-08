@@ -48,7 +48,7 @@ class MyHomePage extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: Text('Iniziaa'),
+                    child: Text('Inizia'),
                   )
                 ],
               ),               
