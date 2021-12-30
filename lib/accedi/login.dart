@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:shop_app_plant/screen/explorer.dart';
 
 const users= const {
   'dribb@gmail.com':'12345',
@@ -38,7 +39,7 @@ class LoginPage extends  StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  FlutterLogin(
-      title: 'shoPlant',
+      title: 'apPlant',
       onLogin: _loginUser,
       onSignup: _loginUser,
 
@@ -70,11 +71,11 @@ class LoginPage extends  StatelessWidget {
             },
           ),
         ],
-      onSubmitAnimationCompleted: (){
-        /*Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => ExplorerScreen(),
-        ));*/
-      },
+      onSubmitAnimationCompleted: () =>
+        Navigator.of(context).pushReplacement(MaterialPageRoute(
+          builder: (context) => ExplorerPage(),
+        )
+      ),
       onRecoverPassword: _recoverPassword,
     );
     

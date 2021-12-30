@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:shop_app_plant/accedi/login.dart';
 import 'package:shop_app_plant/constants.dart';
+import 'package:shop_app_plant/screen/explorer.dart';
 
 
 
@@ -18,7 +19,7 @@ class MyHomePage extends StatelessWidget {
           children: [
             Image.asset('assets/images/logoplant.png'),
             Spacer(flex: 3),
-            Text('Welcome to shoPlant',
+            Text('Welcome to apPlant',
             textAlign: TextAlign.center,
             style: Theme.of(context)
             .textTheme
@@ -35,13 +36,10 @@ class MyHomePage extends StatelessWidget {
                 ),
                 elevation: MaterialStateProperty.all(10),
               ),
-              onPressed: (){},
-
-               /*Navigator.push(
+              onPressed: () => Navigator.push(
                   context, MaterialPageRoute(
-                    builder: (context) => ExplorerScreen())
-                    ),*/
-
+                    builder: (context) => ExplorerPage())
+                    ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.min,
